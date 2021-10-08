@@ -1,0 +1,622 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Mono', monospace;
+}
+
+body {
+  background-color: #f6f8ff;
+  padding: 30px 24px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    padding: 140px 95px 0;
+  }
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  max-width: 375px;
+  margin-bottom: 35px;
+}
+
+@media only screen and (min-width: 768px) {
+  body header {
+    max-width: 575px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body header {
+    max-width: 730px;
+  }
+}
+
+body header h1 {
+  font-size: 26px;
+}
+
+body header .theme:hover {
+  cursor: pointer;
+}
+
+body header .theme .light-setting {
+  display: none;
+}
+
+body header .theme .light-setting::after {
+  margin-left: 16px;
+  margin-top: 5px;
+}
+
+body header .theme .dark-setting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .theme .dark-setting::after {
+  content: url(../assets/icon-moon.svg);
+  margin-left: 16px;
+  margin-top: 5px;
+}
+
+body header .theme p {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+body main {
+  margin: 0 auto;
+  max-width: 375px;
+}
+
+@media only screen and (min-width: 768px) {
+  body main {
+    max-width: 575px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body main {
+    max-width: 730px;
+  }
+}
+
+body main form {
+  position: relative;
+  -webkit-box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 0.19);
+          box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 0.19);
+  margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 1024px) {
+  body main form {
+    margin-bottom: 24px;
+  }
+}
+
+body main form input {
+  height: 60px;
+  border-radius: 15px;
+  padding: 18px 98px 17px 45px;
+  width: 100%;
+  max-width: 375px;
+  font-size: 14px;
+  color: #2b3442;
+  border: none;
+  outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+  body main form input {
+    max-width: 575px;
+    height: 69px;
+    padding: 22px 125px 22px 80px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body main form input {
+    max-width: 730px;
+  }
+}
+
+body main form input::-webkit-input-placeholder {
+  font-size: 12px;
+  color: #4b6a9b;
+}
+
+body main form input:-ms-input-placeholder {
+  font-size: 12px;
+  color: #4b6a9b;
+}
+
+body main form input::-ms-input-placeholder {
+  font-size: 12px;
+  color: #4b6a9b;
+}
+
+body main form input::placeholder {
+  font-size: 12px;
+  color: #4b6a9b;
+}
+
+@media only screen and (min-width: 768px) {
+  body main form input::-webkit-input-placeholder {
+    font-size: 18px;
+  }
+  body main form input:-ms-input-placeholder {
+    font-size: 18px;
+  }
+  body main form input::-ms-input-placeholder {
+    font-size: 18px;
+  }
+  body main form input::placeholder {
+    font-size: 18px;
+  }
+}
+
+body main form span {
+  position: absolute;
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  left: 120px;
+  bottom: -20px;
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  body main form span {
+    margin-left: 107px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body main form span {
+    left: auto;
+    right: 140px;
+    bottom: 24px;
+  }
+}
+
+body main form .hidden {
+  display: none;
+}
+
+body main form img {
+  position: absolute;
+  left: 16px;
+  top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  body main form img {
+    position: absolute;
+    left: 32px;
+    top: 23px;
+  }
+}
+
+body main form button {
+  position: absolute;
+  right: 7px;
+  top: 6.5px;
+  height: 46px;
+  width: 84px;
+  background-color: #0079ff;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+}
+
+@media only screen and (min-width: 768px) {
+  body main form button {
+    top: 9.5px;
+    height: 50px;
+    width: 106px;
+  }
+}
+
+body main form button:hover {
+  background-color: #60abff;
+  cursor: pointer;
+}
+
+body main .container {
+  background-color: white;
+  padding: 32px 24px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 0.19);
+          box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 0.19);
+}
+
+@media only screen and (min-width: 768px) {
+  body main .container {
+    padding: 40px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body main .container {
+    padding: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body main .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 19px;
+  margin-bottom: 33px;
+}
+
+@media only screen and (min-width: 768px) {
+  body main .container .content {
+    gap: 41px;
+    margin-bottom: 24px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body main .container .content {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: -25px;
+  }
+}
+
+body main .container .content .profilePicture img {
+  border-radius: 50%;
+  width: 70px;
+}
+
+@media only screen and (min-width: 768px) {
+  body main .container .content .profilePicture img {
+    width: 117px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body main .container .content .userInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: fill-available;
+  }
+}
+
+body main .container .content .userInfo .top h2 {
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  body main .container .content .userInfo .top h2 {
+    font-size: 26px;
+  }
+}
+
+body main .container .content .userInfo .top h3 {
+  font-size: 13px;
+  color: #0079ff;
+}
+
+@media only screen and (min-width: 768px) {
+  body main .container .content .userInfo .top h3 {
+    font-size: 16px;
+  }
+}
+
+body main .container .content .userInfo p {
+  font-size: 13px;
+  color: #697c9a;
+  margin-top: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  body main .container .content .userInfo p {
+    font-size: 15px;
+  }
+}
+
+body main .container .bio {
+  line-height: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  body main .container .bio {
+    width: 480px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body main .container .bio {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+body main .container .bio p {
+  color: #4b6a9b;
+  font-size: 13px;
+  margin-bottom: 23px;
+}
+
+@media only screen and (min-width: 768px) {
+  body main .container .bio p {
+    font-size: 15px;
+    margin-bottom: 32px;
+  }
+}
+
+body main .container .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 10px;
+  background-color: #f6f8ff;
+  padding: 18px 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  body main .container .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 15px 32px;
+    width: 480px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body main .container .stats {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+body main .container .stats div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  body main .container .stats div {
+    margin-right: 58px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    font-size: 22px;
+  }
+}
+
+body main .container .stats div h4 {
+  margin-bottom: 8px;
+  font-weight: 400;
+  color: #4b6a9b;
+  font-size: 11px;
+  line-height: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  body main .container .stats div h4 {
+    font-size: 13px;
+    margin: 0;
+  }
+}
+
+body main .container .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  body main .container .social {
+    width: 480px;
+    margin-top: 30px;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 'location twitter' 'website company';
+  }
+  body main .container .social .location {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: location;
+  }
+  body main .container .social .twitter {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: twitter;
+  }
+  body main .container .social .website {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: website;
+  }
+  body main .container .social .company {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: company;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body main .container .social {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+body main .container .social .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .container .social .link div {
+  width: 20px;
+  margin-right: 10px;
+}
+
+body main .container .social .link .links {
+  font-size: 14px;
+}
+
+body footer {
+  margin: 160px auto;
+}
+
+body a {
+  text-decoration: none;
+  color: #4b6a9b;
+}
+
+.dark {
+  background-color: #141d2f;
+}
+
+.dark h1 {
+  color: white;
+}
+
+.dark .theme p {
+  color: white;
+}
+
+.dark .theme .dark-setting {
+  display: none;
+}
+
+.dark .theme .light-setting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dark .theme .light-setting::after {
+  content: url(../assets/icon-sun.svg);
+}
+
+.dark form {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.dark form input {
+  background-color: #1e2a47;
+  color: white;
+}
+
+.dark form input::-webkit-input-placeholder {
+  color: white;
+}
+
+.dark form input:-ms-input-placeholder {
+  color: white;
+}
+
+.dark form input::-ms-input-placeholder {
+  color: white;
+}
+
+.dark form input::placeholder {
+  color: white;
+}
+
+.dark .container {
+  background-color: #1e2a47;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: white;
+}
+
+.dark .container .userInfo h2 {
+  color: white;
+}
+
+.dark .container .userInfo #joined {
+  color: white;
+  opacity: 0.9;
+}
+
+.dark .container .bio p {
+  color: white;
+  opacity: 0.9;
+}
+
+.dark .container .stats {
+  background-color: #141d2f;
+}
+
+.dark .container .stats h4 {
+  color: white;
+}
+
+.dark .links {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
