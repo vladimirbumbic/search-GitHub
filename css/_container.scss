@@ -32,7 +32,7 @@ body {
         }
         .theme {
             &:hover {
-                cursor: pointer;
+                cursor: $cursor;
             }
 
             .light-setting {
@@ -48,6 +48,13 @@ body {
                     margin-left: 16px;
                     margin-top: 5px;
                 }
+                &:hover {
+                    &::after {
+                        content: url(../assets/icon-moon.svg);
+                        filter: invert(71%) brightness(32%);
+                    }
+                }
+
                 display: flex;
             }
             p {
@@ -56,6 +63,11 @@ body {
                 font-size: 13px;
                 text-transform: uppercase;
                 letter-spacing: 2.5px;
+                color: #697c9a;
+
+                &:hover {
+                    color: #222731;
+                }
             }
         }
     }
@@ -85,7 +97,7 @@ body {
                 color: $inputColor;
                 border: none;
                 outline: none;
-
+                cursor: $cursor;
                 @media only screen and (min-width: 768px) {
                     max-width: 575px;
                     height: 69px;
@@ -154,7 +166,7 @@ body {
             }
             button:hover {
                 background-color: $buttonhover;
-                cursor: pointer;
+                cursor: $cursor;
             }
         }
         .container {
@@ -288,6 +300,19 @@ body {
                 flex-direction: column;
                 gap: 18px;
                 margin-top: 24px;
+                .links {
+                    &:hover {
+                        cursor: $cursor;
+                    }
+                }
+                #cite,
+                #tw,
+                #firm {
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
                 @media only screen and (min-width: 768px) {
                     width: 480px;
                     margin-top: 30px;
@@ -343,6 +368,9 @@ body {
     .theme {
         p {
             color: white;
+            &:hover {
+                color: #90a4d4;
+            }
         }
         .dark-setting {
             display: none;
@@ -351,6 +379,13 @@ body {
             display: flex;
             &::after {
                 content: url(../assets/icon-sun.svg);
+            }
+            &:hover {
+                &::after {
+                    content: url(../assets/icon-sun.svg);
+                    filter: invert(38%) sepia(43%) saturate(481%)
+                        hue-rotate(191deg) contrast(78%);
+                }
             }
         }
     }
