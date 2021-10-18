@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>GitHub search</title>
+    </head>
+    <body>
+        <header>
+            <h1>devfinder</h1>
+
+            <div class="theme">
+                <p class="light-setting">Light</p>
+                <p class="dark-setting">Dark</p>
+            </div>
+        </header>
+
+        <main>
+            <form onsubmit="submitForm(event)">
+                <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Search GitHub username..."
+                />
+                <span class="hidden">No results</span>
+                <img src="assets/icon-search.svg" alt="search" />
+                <button type="submit">Search</button>
+            </form>
+
+            <section class="container">
+                <section class="content">
+                    <div class="profilePicture">
+                        <img
+                            src="assets/Bitmap.png"
+                            alt="Profile Picture"
+                            id="profilePic"
+                        />
+                    </div>
+
+                    <div class="userInfo">
+                        <div class="top">
+                            <h2 id="name"></h2>
+                            <h3 id="githubUsername"></h3>
+                        </div>
+
+                        <p id="joined"></p>
+                    </div>
+                </section>
+
+                <section class="bio">
+                    <p id="bio"></p>
+                </section>
+
+                <section class="stats">
+                    <div>
+                        <h4>Repos</h4>
+                        <div id="repo"></div>
+                    </div>
+                    <div>
+                        <h4>Followers</h4>
+                        <div id="followers"></div>
+                    </div>
+                    <div>
+                        <h4>Following</h4>
+                        <div id="following"></div>
+                    </div>
+                </section>
+
+                <section class="social">
+                    <div class="link location">
+                        <div>
+                            <img
+                                src="assets/icon-location.svg"
+                                alt="location"
+                                id="loc"
+                            />
+                        </div>
+                        <a class="links" id="place"></a>
+                    </div>
+
+                    <div class="link website">
+                        <div>
+                            <img
+                                src="assets/icon-website.svg"
+                                alt="website"
+                                id="web"
+                            />
+                        </div>
+                        <a
+                            href="https://github.blog"
+                            class="links"
+                            id="cite"
+                            target="_blank"
+                        ></a>
+                    </div>
+
+                    <div class="link twitter">
+                        <div>
+                            <img
+                                src="assets/icon-twitter.svg"
+                                alt="twitter"
+                                id="tweet"
+                            />
+                        </div>
+                        <a href="" class="links" id="tw" target="_blank"></a>
+                    </div>
+
+                    <div class="link company">
+                        <div>
+                            <img
+                                src="assets/icon-company.svg"
+                                alt="company"
+                                id="comp"
+                            />
+                        </div>
+                        <a href="" class="links" id="firm" target="_blank"></a>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer></footer>
+        <script src="script.js"></script>
+    </body>
+</html>
